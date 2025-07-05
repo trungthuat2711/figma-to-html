@@ -148,7 +148,7 @@ a{
     right: 0;
     background-color: #FFF;
     border-radius: 12px;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hero-summary .item{
@@ -328,5 +328,83 @@ a{
     cursor: pointer;
 }
 
+.popular .courses-list{
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
 
+.popular .course-item{
+    border-radius: 12px;
+    background-color: #FFF;
+    border: 1px solid #e2dfda;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
 
+.popular .course-item:hover{
+    transform: scale(1.005);
+    background-color: #f9f9f9;
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.25);
+}
+
+.popular .course-item .thumb{
+    width: 100%;
+    height: 278px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;  /*ảnh không vỡ khi set cả width và height*/
+}
+
+.popular .course-item .info{
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .rating,
+.popular .course-item .foot,
+.popular .course-item .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.popular .rating .value{
+    margin-left: 6px;
+    color: #fea31b;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.popular .course-item .desc{
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.popular .course-item .foot{
+    margin-top: 12px;
+}
+
+.popular .foot .price{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.popular .foot .btn-book{
+    border: none;
+}
+
+.popular .foot .btn-book:hover{
+    opacity: 1;  /*đè thuộc tính opacity 0.8 của btn:hover*/
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
